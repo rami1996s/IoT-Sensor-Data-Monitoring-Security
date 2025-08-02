@@ -1,4 +1,5 @@
 # IoT Sensor Data Monitoring System (Security-Focused)
+implemented with Hussein Mohammad in 2025
 
 This project demonstrates a secure IoT system for real-time sensor data monitoring using ESP32 microcontrollers and a Flask server. It implements cryptographic and network defenses to ensure data integrity, authenticity, and availability in the face of common IoT attacks.
 
@@ -36,7 +37,7 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
 - **MQ2 Gas Sensor**
 - **DHT11 Sensor**
 
-### ☁️ Software & Services
+###  Software & Services
 
 - **Flask** – HTTP server with hash verification logic
 - **MySQL** – Data storage
