@@ -1,0 +1,32 @@
+# === Arduino/C++ build artifacts ===
+*.elf
+*.hex
+*.bin
+*.bak
+*.tmp
+*.o
+*.obj
+
+# === Python / Flask / Scripts ===
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# === Virtual Environments (if you use one) ===
+env/
+venv/
+ENV/
+.venv/
+.Python
+
+# === OS and Editor-Specific Files ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# === Secret Configuration (if using environment vars or keys) ===
+.env
