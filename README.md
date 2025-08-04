@@ -50,12 +50,25 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
 
 ##  Data Flow
 
+(first security scenario)
+
+1. **ESP32** collects temperature, humidity, and gas levels.
+2. Sends data + hash as JSON via HTTP to Flask server.
+3. Flask accepts the data from specefic IP address and rejects any data from other IP addresses.
+4. then the Flask server store the data in Data base and send it to the broker.
+5. Node-RED subscribes to MQTT topic and displays data live.
+
+....................................
+
+( second security scenario)
+
 1. **ESP32** collects temperature, humidity, and gas levels.
 2. It generates a **HMAC-SHA256 hash** using a secret key.
 3. Sends data + hash as JSON via HTTP to Flask server.
 4. Flask verifies the hash:
    - If valid → stores in MySQL and publishes to MQTT broker.
    - If invalid → rejects request.
+4. then the Flask server store the data in Data base and send it to the broker.
 5. Node-RED subscribes to MQTT topic and displays data live.
 
 ---
