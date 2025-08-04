@@ -48,7 +48,7 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
 
 ---
 
-##  Data Flow (Normal Scenario)
+##  Data Flow
 
 1. **ESP32** collects temperature, humidity, and gas levels.
 2. It generates a **HMAC-SHA256 hash** using a secret key.
